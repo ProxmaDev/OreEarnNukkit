@@ -11,11 +11,11 @@ enablePopup: true
 earnings:
   stoneEarn: 0.02
   quartzEarn: 2.5
-  coalEarn: 1
-  ironEarn: 2
-  redstoneEarn: 2
-  lapisEarn: 15
-  goldEarn: 25
-  diamondEarn: 50
-  emeraldEarn: 75
+  coalEarn: 1.0
+  ironEarn: 2.0
+  redstoneEarn: 2.0
+  lapisEarn: 15.0
+  goldEarn: 25.0
+  diamondEarn: 50.0
+  emeraldEarn: 75.0
 ...
