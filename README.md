@@ -1,2 +1,3 @@
 # OreEarnNukkit
 OreEarn Plugin for NukkitX Servers.
+# Comming soon...
