@@ -35,6 +35,7 @@ public class MainClass extends PluginBase implements Listener {
                 case Block.STONE:
                     double stoneEarn = this.getConfig().get("earnings.stoneEarn", 0.0);
                     EconomyAPI.getInstance().addMoney(player, stoneEarn);
+                    break;
                 case Block.COAL_ORE:
                     double coalEarn = this.getConfig().get("earnings.coalEarn", 0.0);
                     EconomyAPI.getInstance().addMoney(player, coalEarn);
