@@ -1,0 +1,15 @@
+---
+# Do not edit messages-version
+msg-version: 1
+
+# messages:
+# {money} = Amount of money
+quartzEarn: "You've recieved {money}$ for mining quartz"
+coalEarn: "You've recieved {money}$ for mining coal."
+ironEarn: "You've recieved {money}$ for mining iron."
+redstoneEarn: "You've recieved {money}$ for mining redstone."
+lapisEarn: "You've recieved {money}$ for mining lapis."
+goldEarn: "You've recieved {money}$ for mining gold."
+diamondEarn: "You've recieved {money}$ for mining diamond."
+emeraldEarn: "You've recieved {money}$ for mining emerald."
+...
