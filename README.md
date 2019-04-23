@@ -1,3 +1,3 @@
-# OreEarnNukkit
+# OreEarn (Nukkit)
 OreEarn Plugin for NukkitX Servers.
-# Comming soon...
+Earn money easily by mining ores and stone.
