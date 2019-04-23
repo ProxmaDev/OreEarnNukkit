@@ -30,7 +30,7 @@ public class MainClass extends PluginBase implements Listener {
         Player player = event.getPlayer();
 
         Config messages = new Config(this.getDataFolder() + "/messages.yml", Config.YAML);
-        if(player.getGamemode() != 1 || player.getGamemode() != 3) {
+        if(player.getGamemode() == 0 || player.getGamemode() == 2) {
             switch (blockid) {
                 case Block.STONE:
                     double stoneEarn = this.getConfig().get("earnings.stoneEarn", 0);
