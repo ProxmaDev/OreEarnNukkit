@@ -6,6 +6,7 @@ import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.block.BlockBreakEvent;
 import cn.nukkit.item.Item;
+import cn.nukkit.item.enchantment.Enchantment;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.Config;
 import me.onebone.economyapi.EconomyAPI;
@@ -19,6 +20,7 @@ public class MainClass extends PluginBase implements Listener {
         getServer().getPluginManager().registerEvents(this, this);
         this.saveResource("messages.yml");
         this.saveDefaultConfig();
+
     }
 
     @EventHandler
@@ -28,6 +30,13 @@ public class MainClass extends PluginBase implements Listener {
         int blockid = block.getId();
 
         Player player = event.getPlayer();
+
+        Item item = event.getItem();
+        if(item.getEnchantment(Enchantment.ID_SILK_TOUCH) != null) {
+            if(this.getConfig().get("ignoreSilktouch", true)) {
+                return;
+            }
+        }
 
         Config messages = new Config(this.getDataFolder() + "/messages.yml", Config.YAML);
         if(player.getGamemode() == 0 || player.getGamemode() == 2) {

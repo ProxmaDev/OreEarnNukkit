@@ -3,7 +3,6 @@
 cfg-version: 1
 
 # If false players can earn money by breaking ores with silktouch
-# Not done yet
 ignoreSilktouch: true
 # If false players won't get an popup anymore by breaking an ore
 enablePopup: true
