@@ -3,6 +3,7 @@ package SchdowNVIDIA.OreEarn;
 import cn.nukkit.Player;
 import cn.nukkit.block.Block;
 import cn.nukkit.event.EventHandler;
+import cn.nukkit.event.EventPriority;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.block.BlockBreakEvent;
 import cn.nukkit.item.Item;
@@ -23,7 +24,7 @@ public class MainClass extends PluginBase implements Listener {
 
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGHEST,ignoreCancelled = true)
     public void onBreak(BlockBreakEvent event) {
 
         Block block = event.getBlock();
